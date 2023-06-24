@@ -1,47 +1,88 @@
-@charset "UTF-8";
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@100&family=Exo:ital@1&display=swap');
+
+@media screen and (max-width: 800px) {
+
+  .leftcolumn,
+  .rightcolumn {
+    width: 100%;
+    padding: 0;
+  }
+}
+
+
+@media screen and (max-width: 400px) {
+  .topnav a {
+    float: none;
+    width: 100%;
+    margin: 0%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+    margin: 2px;
+  }
+}
+
+.row{
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-top: 20px;
+}
+
 .header {
-    grid-area: header ;
-    background-color: rgb(72, 0, 139);
-    margin-top: 0%;
-    text-align: center;
-  }
-  
-  .nav{
-    grid-area: menu;
-  }
-  
-  .main{
-    grid-area: main;
-  }
-  
-  .item4 {
-    grid-area: right;
-  }
-  
-  .footer{
-    grid-area: footer;
-  }
-  
-  .grid-container {
-    display: grid;
-    grid-template-areas:
-      'header header header header header header'
-      'menu menu menu menu menu menu'
-      'left left main main main right right'
-      'footer footer footer footer footer';
-    gap: 10px;
-    background-color: #ffffff;
-    padding: 10px;
-    margin: 0%;
-  }
-  
-  .grid-container>div {
-    background-color: rgba(255, 255, 255, 0.8);
-    padding: 20px 0;
-    font-size: 16px;
-    margin: 0%;
-  }
-  body{
-    margin: 0%;
-  }
-  
+  background-color: #E6D948;
+  padding: 0px;
+  text-align: center;
+  margin: 0%;
+
+}
+
+.header h1 {
+  font-size: 50px;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #000000;
+  margin: 0%;
+  font-family: 'Caprasimo', cursive;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.topnav a:hover {
+  background-color:#7163FF;
+  color: black;
+}
+
+body {
+  background-color: white;
+  text-align: justify;
+  margin: 0%;
+  font-family:'PT Sans', sans-serif ;
+}
+
+.column {
+  float: left;
+  width: 33.33%;
+  margin-right: 20px;
+}
+
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+
+}
+
