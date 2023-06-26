@@ -3,8 +3,7 @@
 
 @media screen and (max-width: 800px) {
 
-  .leftcolumn,
-  .rightcolumn {
+  .column{
     width: 100%;
     padding: 0;
   }
@@ -37,6 +36,8 @@
   padding: 0px;
   text-align: center;
   margin: 0%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
 
 }
 
@@ -70,20 +71,16 @@ body {
   text-align: justify;
   margin: 0%;
   font-family:'PT Sans', sans-serif ;
-}
+  }
 
-.column {
+.article2 {
   float: left;
-  width: 33.33%;
-  margin-right: 20px;
+  margin: 5px 30px ;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
 }
-
-
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-
+.coluna1{
+  margin-left: 20px;
 }
 
 
