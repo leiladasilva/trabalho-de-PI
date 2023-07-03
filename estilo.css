@@ -25,7 +25,7 @@
   }
 }
 .header {
-  background-color: #E6D948;
+  background-color:#0B1226;
   padding: 0px;
   text-align: center;
   margin: 0%;
@@ -51,12 +51,12 @@
 }
 
 .topnav a:hover {
-  background-color:#6380ff;
-  color: black;
+  background-color:#1040cf;
+  color: rgb(255, 255, 255);
 }
 
 body {
-  background-color: white;
+  background-color:#0378A6;
   text-align: justify;
   margin: 0px;
   font-family: Arial, Helvetica, sans-serif;
@@ -71,6 +71,8 @@ body {
 .coluna1{
   margin-left: 20px;
   border-radius: 2px;
+
+
 }
 .introducao{
   margin: 5px 30px;
@@ -81,4 +83,33 @@ body {
   float: left;
   background-color: #000000;
 }
+p{
+  color: aliceblue;
 
+}
+h2{
+  color: #ffffff;
+}
+img{
+  width: 300px;
+}
+
+#duas-colunas{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  
+}
+.teste{
+  display: grid;
+  grid-template-columns:299px 1fr;
+  margin: 20px;
+  
+}
+.colunas3{
+  margin: 20px;
+  
+}
+.grid{
+  color: #a60303;
+  display: grid;
+}
